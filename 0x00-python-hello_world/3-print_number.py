@@ -1,0 +1,3 @@
+#!/usr/bin/phython3
+number = 98
+print(f"{number} Best School")
