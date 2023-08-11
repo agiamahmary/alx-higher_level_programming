@@ -10,9 +10,9 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *slow, *fast;
-    	slow = fast = head;
+    	slow = fast = list;
    
-    while(slow && fast && fast->next) {
+    while (slow && fast && fast->next) {
         /* Slow pointer will move one node per iteration whereas 
         fast node will move two nodes per iteration */
         slow = slow->next;
@@ -22,5 +22,4 @@ int check_cycle(listint_t *list)
         }
     }
     return (0);
-}
 }
