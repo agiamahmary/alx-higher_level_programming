@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module contains the function is_same_class that test if obj is an instance of a_class
+This module contains the function is_same_class that test if obj is an object of type a_class
 """
 
 
