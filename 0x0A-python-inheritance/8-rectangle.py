@@ -1,6 +1,6 @@
-#!/usr/bin/python3
+ #!/usr/bin/python3
 ''' Contains Rectangle class
-    that Inherits from BaseGeometry
+that Inherits from BaseGeometry
 '''
 
 
