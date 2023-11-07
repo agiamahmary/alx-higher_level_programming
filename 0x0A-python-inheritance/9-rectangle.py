@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-'''Contains Rectangle class
-    that Inherits  BaseGeometry
+''' Contains Rectangle class 
+that Inherits  BaseGeometry
 '''
 
 
@@ -14,10 +14,12 @@ class Rectangle(BaseGeometry):
             if  not self.integer_validator("height", height):
                 self.__height = height
                 self.__width = width
+                
     def area(self):
         ''' Area of the rectangle '''
         
         return self.__width * self.__height
+        
      def __str__(self):
          ''' String repr '''
          
