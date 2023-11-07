@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-""" Contains a BaseGeometry class """"
+"""" Contains a BaseGeometry class
+
+""""
 
 
 class BaseGeometry:
-    """ METHOD  """
+    """ METHOD """
     def area(self):
-         """  Raise exception that area is not implemented """
+         """  Raise exception that 
+             area is not implemented
+         """
          raise Exception("area() is not implemented")
