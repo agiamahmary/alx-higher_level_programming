@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-“””Contains function `is_same_class(obj, a_class) `
-
-- that returns true if the exact instance
-of the specified class.
+“”” Contains function is_same_class
+    - that returns true the exact instance
+    of a_class.
 “””
 
 
