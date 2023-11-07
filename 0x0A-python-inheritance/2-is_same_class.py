@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ Contains is_same_class.
 
-    - that returns true if exact instance of
-     a_class.
+- that returns true if exact instance of
+a_class.
 """
 
 
