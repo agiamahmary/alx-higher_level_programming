@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ A module that contains a lookup func
 
-- (for searching for and return the list of available attitributes and methods attached to the object in question)
+    - (for searching for and return the list of available attitributes and methods attached to the object in question)
 
 """
 
