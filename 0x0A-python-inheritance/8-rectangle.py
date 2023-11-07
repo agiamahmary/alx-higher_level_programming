@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Contains Rectangle class
-    that Inherits from BaseGeometry
+that Inherits from BaseGeometry
 """
 
 
@@ -16,6 +16,7 @@ class BaseGeometry:
              raise TypeError("{} must be an integer".format(name))
          if value <= 0:
              raise ValueError("{} must be greater than zero".format(name))
+
 
 class Rectangle(BaseGeometry):
     """ Inherits BaseGeometry Class """
