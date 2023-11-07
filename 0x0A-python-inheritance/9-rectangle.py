@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' Contains Rectangle class
+'''Contains Rectangle class
 that Inherits from BaseGeometry
 '''
 
