@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Contains an empty BaseGeometry class """
+""" Contains an empty BaseGeometry class
+
+"""
 
 
 class BaseGeometry:
