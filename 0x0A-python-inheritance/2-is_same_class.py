@@ -5,6 +5,7 @@
     of the specified class 
 “””
 
+
 def is_same_class(obj, a_class):
     """ Returns true is obj is exact instance of a_class """
     
