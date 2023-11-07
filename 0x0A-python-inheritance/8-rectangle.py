@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Contains Rectangle class """
+""" Contains Rectangle class
+
+"""
 
 
 Rectangle(BaseGeometry):
