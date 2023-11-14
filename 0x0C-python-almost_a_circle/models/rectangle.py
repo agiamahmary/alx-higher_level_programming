@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Modlue contains rectangle class"""
+"""Module contains rectangle class"""
 from .base import Base
 
 
 class Rectangle(Base):
-    ''' Rectangle class '''
+    '''Rectangle class'''
     def __init__(self, width, height, x=0, y=0, id=None):
         """Init Method"""
         super().__init__(id)
@@ -13,6 +13,10 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
+    def area(self):
+        '''Area of Rectangle'''
+        return self.__height * self.__width
+
     @property
     def width(self):
         """Getter for width"""
@@ -20,10 +24,10 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """setter for width"""
+        """Setter for width"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if(value <= 0):
+        if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
 
@@ -37,7 +41,7 @@ class Rectangle(Base):
         '''Setter for height'''
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        if(value <= 0):
+        if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
 
@@ -51,7 +55,7 @@ class Rectangle(Base):
         '''Setter for x'''
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
-        if(value < 0):
+        if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
 
@@ -65,6 +69,6 @@ class Rectangle(Base):
         '''Setter for y'''
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
-        if(value < 0):
+        if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
