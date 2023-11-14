@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Modlue contains rectangle class"""
-
+from .base import Base
 
 class Rectangle(Base):
     ''' Rectangle class '''
