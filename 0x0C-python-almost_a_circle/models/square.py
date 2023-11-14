@@ -9,6 +9,6 @@ class Square:
         """ Init method """
         super().__init__(self, size, x=0, y=0, id)
         
-    def __str__():
+    def __str__(self):
         """ str method """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
