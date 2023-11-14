@@ -17,7 +17,7 @@ class Rectangle(Base):
         '''Area of Rectangle'''
         return self.__height * self.__width
 
-    def display(self):
+   def display(self):
     """Display rectangle method"""
     i = 0
     while (i < self.__height):
