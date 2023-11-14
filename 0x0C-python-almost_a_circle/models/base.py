@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"Module with Base class"
+"""Module with Base class"""
 
 
 class Base:
-    "Base Class"
+    """Base Class"""
     __nb_objects = 0
     def __init__(self, id=None):
         if (id != None):
