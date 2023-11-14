@@ -27,10 +27,17 @@ class Rectangle(Base):
             for j in range(self.__width):
                 print("#", end="")
             print()
-    def update(self, *args):
-        """Update args"""
-       self.id, self.width, self.height, self.x, self.y = args
-        
+    def update(self, *args, **kwargs):
+        """Update attributes with args or kwargs"""
+        if args:
+            self.id, self.width, self.height, self.x, self.y = args
+        elif kwargs:
+            self.id = kwargs.get('id', self.id)
+            self.width = kwargs.get('width', self.width)
+            self.height = kwargs.get('height', self.height)
+            self.x = kwargs.get('x', self.x)
+            self.y = kwargs.get('y', self.y)
+
     def __str__(self):
         """ Str implementation """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
