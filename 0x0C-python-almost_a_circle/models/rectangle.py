@@ -27,7 +27,10 @@ class Rectangle(Base):
             for j in range(self.__width):
                 print("#", end="")
             print()
-
+    def update(self, *args):
+        """Update args"""
+       self.id, self.width, self.height, self.x, self.y = args
+        
     def __str__(self):
         """ Str implementation """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
