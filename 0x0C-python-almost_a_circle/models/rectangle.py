@@ -18,15 +18,11 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
-        """Display rectangle method"""
-        i = 0
-        while (i < self.__height):
-            j = 0
-            while (j < self.__width):
-                print("#", end="")
-                j += 1 
-            print()
-            i += 1
+    """Display rectangle method"""
+    for i in range(self.__height):
+        for j in range(self.__width):
+            print("#", end="")
+        print()
 
     @property
     def width(self):
