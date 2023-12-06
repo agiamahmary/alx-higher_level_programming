@@ -58,7 +58,7 @@ class Square():
 
     @position.setter
     def position(self, value):
-        if type(value) is tuple and len(value) is 2 and \
+        if type(value) is tuple and len(value) == 2 and \
                 type(value[0]) is int and type(value[1]) is int:
             self.__position = value
         else:
@@ -77,4 +77,4 @@ class Square():
                 print(' ' * self.__position[0], end='')
                 print('#' * self.__size)
         else:
-            print(
+            print()
