@@ -34,14 +34,17 @@ class Node:
 
     @next_node.setter
     def next_node(self, value):
-         """Sets __next_node with value """
+        """Sets __next_node with value """
 
-         if value is None or isinstance(value, Node):
-             self.__next_node = value
-         else:
-             raise TypeError("next_node must be a Node object")
+        if value is None or isinstance(value, Node):
+            self.__next_node = value
+        else:
+            raise TypeError("next_node must be a Node object")
+
 
 class SinglyLinkedList:
+    """Defines a singly linked list """
+
     def __init__(self):
         """Initialises the list """
 
@@ -63,6 +66,7 @@ class SinglyLinkedList:
 
     def __str__(self):
         """Returns a str format to print """
+
         rep = ""
         current = self.__head
 
