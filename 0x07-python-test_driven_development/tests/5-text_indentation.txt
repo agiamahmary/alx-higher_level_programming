@@ -1,0 +1,63 @@
+=====================================
+  Tests for ``5-text_indentation``
+====================================
+
+Imports the text_indentation func
++++++++++++++++++++++++++++++++++
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+When text is sent as a normal string
+++++++++++++++++++++++++++++++++++++
+
+	>>> text_indentation("Holberton School")
+	Holberton School
+
+
+When text contains one of the characters  ., ? and :
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	>>> text_indentation("Holberton.School")
+	Holberton.
+	<BLANKLINE>
+	School
+
+When text contains a mixture of all or multiples of any of the char ., ? and :
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	>>> text_indentation("Holberton. School? How are you: John") #doctest:+NORMALIZE_WHITESPACE
+	Holberton.
+	<BLANKLINE>
+	School?
+	<BLANKLINE>
+	How are you:
+	<BLANKLINE>
+	John
+
+When text is not of  string type
++++++++++++++++++++++++++++++++++
+
+	>>> text_indentation({"Holberton": "School"})
+	Traceback (most recent call last):
+  	...
+	TypeError: text must be a string
+
+When text contains a new line imbedded
+++++++++++++++++++++++++++++++++++++++
+
+	>>> text_indentation("Holb\nerton: Scho\nol?")
+	Holb
+	erton:
+	<BLANKLINE>
+	Scho
+	ol?
+	<BLANKLINE>
+
+When text-indentation does not recieve any input
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+	>>> text_indentation()
+	Traceback (most recent call last):
+  	...
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
