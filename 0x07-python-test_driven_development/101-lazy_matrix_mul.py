@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 import numpy as np
-"Contains lazy_matrix_mul"
+"""Contains lazy_matrix_mul"""
 
 
 def lazy_matrix_mul(m_a, m_b):
-    "Multiplies two matrices"
+    """Multiplies two matrices"""
     if not isinstance(m_a, list):
         raise TypeError('m_a must be a list')
     if not isinstance(m_b, list):
