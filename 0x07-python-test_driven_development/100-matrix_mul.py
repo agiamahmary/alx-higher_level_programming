@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"Contains matrix_mul func"
+
+
 def matrix_mul(m_a, m_b):
+    "Prints a matrix"
+
     if not isinstance(m_a, list):
         raise TypeError('m_a must be a list')
     if not isinstance(m_b, list):
