@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+""" Contains def func """
+
+
 def lookup(obj):
     """
     Used to search and return available attributes and methods attached to obj.
