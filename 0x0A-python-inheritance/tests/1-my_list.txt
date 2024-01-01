@@ -14,7 +14,7 @@ Checks instantation
 ++++++++++++++++++++++++++++++++++++
 
     >>> isinstance(my_list, list)
-	True
+    True
 
 
 Checks append method
