@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ Contains function inherits_from(obj, a_class)
 
-    -that returns true if object is an instance of
-    a class that inherited directly
-    or indirectly from the specified class
+-that returns true if object is an instance of
+a class that inherited directly
+or indirectly from the specified class
 """
 
 
