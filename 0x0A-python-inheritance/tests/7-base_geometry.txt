@@ -3,7 +3,7 @@
 ====================================
 
 
-Imports the MyList class
+Imports the BaseGeometry class
 +++++++++++++++++++++++++++++++++
 
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
@@ -20,47 +20,80 @@ Checks instantation
 Checks area method
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    >>> bg area()
+    >>> bg.area()
     Traceback (most recent call last):
     ...
-    TypeError: This is a type error
+    TypeError: area() is not implemented
 
     
 
 
-Checks __str__ method
+Checks integer_validator() method without argument
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    >>> print(my_list)
-    [8, 1, 4, 2, 3, 5]
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'arg1' and 'arg2
 
-
-Checks print_sorted with unsorted append
+Checks integer_validator() method with one argument missing 
 +++++++++++++++++++++++++++++++++
 
-    >>> my_list.print_sorted()
-    [1, 2, 3, 4, 5, 8]
+    >>> bg.integer_validator(“age”)
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 1 required positional argument: 'arg2'
 
 
-Checks print_sorted with sorted append
+
+Checks integer_validator() method
 ++++++++++++++++++++++++++++++++++++++
 
-    >>> my_list.print_sorted()
-    [1, 2, 3, 4, 5, 8]
-	
+    >>> bg.integer_validator(“age”, 1)
 
-Checks print_soted with empty list
+
+Checks integer_validator() method
 ++++++++++++++++++++++++++++++++++
 
-    >>> new_list = MyList()
-    >>> MyList.print_sorted(new_list)
+    >>> bg.integer_validator(“age”, 0)
+
+
+Checks integer_validator() method
++++++++++++++++++++++++++++++++++++
+
+    >>> bg.integer_validator(“age”, -4)
+
+
+Checks integer_validator() method
++++++++++++++++++++++++++++++++++++
+
+    >>> bg.integer_validator(“age”, “4”)
+
+
+Checks integer_validator() method
++++++++++++++++++++++++++++++++++++
+
+    >>> bg.integer_validator(“age”, (4,))
+
+
+Checks integer_validator() method
++++++++++++++++++++++++++++++++++++
+
+    >>> bg.integer_validator(“age”, [3])
+
+
+Checks integer_validator() method
++++++++++++++++++++++++++++++++++++
+
+    >>> bg.integer_validator(“age”, True)
 
 
 Checks print_sorted return new list
 +++++++++++++++++++++++++++++++++++
 
-    >>> new_list.append(5)
-    >>> new_list.append(9)
-    >>> new_list.append(4)
-    >>> new_list != new_list.print_sorted()
-    True
+    >>> bg.integer_validator(“age”, {3, 4})
+
+
+Checks integer_validator() method
++++++++++++++++++++++++++++++++++++
+
+    >>> bg.integer_validator(“age”, None)
