@@ -38,7 +38,7 @@ Checks integer_validator() method without argument
 Checks integer_validator() method with one argument missing 
 +++++++++++++++++++++++++++++++++
 
-    >>> bg.integer_validator(“age”)
+    >>> bg.integer_validator("age")
     Traceback (most recent call last):
     TypeError: integer_validator() missing 1 required positional argument: 'value'
 
@@ -46,13 +46,13 @@ Checks integer_validator() method with one argument missing
 Checks integer_validator() method
 ++++++++++++++++++++++++++++++++++++++
 
-    >>> bg.integer_validator(“age”, 1)
+    >>> bg.integer_validator("age", 1)
 
 
 Checks integer_validator() method
 ++++++++++++++++++++++++++++++++++
 
-    >>> bg.integer_validator(“age”, 0)
+    >>> bg.integer_validator("age", 0)
     Traceback (most recent call last):
     ...
     ValueError: age must be greater than 0
@@ -61,7 +61,7 @@ Checks integer_validator() method
 Checks integer_validator() method
 +++++++++++++++++++++++++++++++++++
 
-    >>> bg.integer_validator(“age”, -4)
+    >>> bg.integer_validator("age", -4)
     Traceback (most recent call last):
     ...
     ValueError: age must be greater than 0
@@ -70,7 +70,7 @@ Checks integer_validator() method
 Checks integer_validator() method
 +++++++++++++++++++++++++++++++++++
 
-    >>> bg.integer_validator(“age”, “4”)
+    >>> bg.integer_validator("age", “4”)
     Traceback (most recent call last):
     ...
     TypeError: age must be an integer
@@ -79,7 +79,7 @@ Checks integer_validator() method
 Checks integer_validator() method
 +++++++++++++++++++++++++++++++++++
 
-    >>> bg.integer_validator(“age”, (4,))
+    >>> bg.integer_validator("age", (4,))
     Traceback (most recent call last):
     ...
     TypeError: age must be an integer
@@ -88,7 +88,7 @@ Checks integer_validator() method
 Checks integer_validator() method
 +++++++++++++++++++++++++++++++++++
 
-    >>> bg.integer_validator(“age”, [3])
+    >>> bg.integer_validator("age", [3])
     Traceback (most recent call last):
     ...
     TypeError: age must be an integer
@@ -97,7 +97,7 @@ Checks integer_validator() method
 Checks integer_validator() method
 +++++++++++++++++++++++++++++++++++
 
-    >>> bg.integer_validator(“age”, True)
+    >>> bg.integer_validator("age", True)
     Traceback (most recent call last):
     ...
     TypeError: age must be an integer
@@ -106,7 +106,7 @@ Checks integer_validator() method
 Checks print_sorted return new list
 +++++++++++++++++++++++++++++++++++
 
-    >>> bg.integer_validator(“age”, {3, 4})
+    >>> bg.integer_validator("age", {3, 4})
     Traceback (most recent call last):
     ...
     TypeError: age must be an integer
@@ -115,7 +115,7 @@ Checks print_sorted return new list
 Checks integer_validator() method
 +++++++++++++++++++++++++++++++++++
 
-    >>> bg.integer_validator(“age”, None)
+    >>> bg.integer_validator("age", None)
     Traceback (most recent call last):
     ...
     TypeError: age must be an integer
