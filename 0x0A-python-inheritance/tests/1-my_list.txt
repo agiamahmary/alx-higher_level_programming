@@ -6,21 +6,21 @@
 Imports the MyList class
 +++++++++++++++++++++++++++++++++
 
-	>>> MyList = __import__('1-my_list').MyList
+    >>> MyList = __import__('1-my_list').MyList
     >>> my_list = MyList()
 
 
 Checks instantation
 ++++++++++++++++++++++++++++++++++++
 
-	>>> isinstance(my_list, list)
+    >>> isinstance(my_list, list)
 	True
 
 
 Checks append method
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-	>>> my_list.append(8)
+    >>> my_list.append(8)
     >>> my_list.append(1)
     >>> my_list.append(4)
     >>> my_list.append(2)
