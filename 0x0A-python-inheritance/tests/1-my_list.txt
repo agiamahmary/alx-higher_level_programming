@@ -38,7 +38,7 @@ Checks __str__ method
 Checks print_sorted with unsorted append
 +++++++++++++++++++++++++++++++++
 
-	>>> my_list.print_sorted()
+    >>> my_list.print_sorted()
     [1, 2, 3, 4, 5, 8]
 
 
