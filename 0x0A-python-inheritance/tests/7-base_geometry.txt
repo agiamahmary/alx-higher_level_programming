@@ -70,7 +70,7 @@ Checks integer_validator() method
 Checks integer_validator() method
 +++++++++++++++++++++++++++++++++++
 
-    >>> bg.integer_validator("age", “4”)
+    >>> bg.integer_validator("age", "4")
     Traceback (most recent call last):
     ...
     TypeError: age must be an integer
