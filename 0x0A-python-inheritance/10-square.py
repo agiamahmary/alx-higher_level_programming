@@ -8,6 +8,7 @@ class Square(Rectangle):
      ''' Inherits Rectangle '''
      
      def __init__(self, size):
+          '''INIT METHOD'''
          self.integer_validator('size', size)
          self.__size = size
               
