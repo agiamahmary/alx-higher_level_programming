@@ -1,0 +1,66 @@
+=====================================
+  Tests for ``1-my_list.py``
+====================================
+
+
+Imports the MyList class
++++++++++++++++++++++++++++++++++
+
+	>>> MyList = __import__('1-my_list').MyList
+    >>> my_list = MyList()
+
+
+Checks instantation
+++++++++++++++++++++++++++++++++++++
+
+	>>> isinstance(my_list, list)
+	True
+
+
+Checks append method
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	>>> my_list.append(8)
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+
+
+Checks __str__ method
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	>>> print(my_list)
+    [8, 1, 4, 2, 3, 5]
+
+
+Checks print_sorted with unsorted append
++++++++++++++++++++++++++++++++++
+
+	>>> my_list.print_sorted()
+    [1, 2, 3, 4, 5, 8]
+
+
+Checks print_sorted with sorted append
+++++++++++++++++++++++++++++++++++++++
+
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5, 8]
+	
+
+Checks print_soted with empty list
+++++++++++++++++++++++++++++++++++
+
+    >>> new_list = MyList()
+    >>> MyList.print_sorted(new_list)
+
+
+Checks print_sorted return new list
++++++++++++++++++++++++++++++++++++
+
+    >>> new_list.append(5)
+    >>> new_list.append(9)
+    >>> new_list.append(4)
+    >>> new_list != new_list.print_sorted()
+    True
