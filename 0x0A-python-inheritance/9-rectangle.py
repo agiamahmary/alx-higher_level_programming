@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """ Contains a BaseGeometry class """
 
+
 class BaseGeometry:
     """ METHOD  """
-    
+
     def area(self):
         """  Raise exception that area is not implemented """
         raise Exception("area() is not implemented")
@@ -13,17 +14,18 @@ class BaseGeometry:
         if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
-            raise ValueError("{} must be greater than zero".format(name))
+            raise ValueError("{} must be greater than 0".format(name))
+
 
 class Rectangle(BaseGeometry):
     """ Inherits BaseGeometry """
 
     def __init__(self, width, height):
         ''' init method '''
-        if not self.integer_validator('width', width):
-            if not self.integer_validator("height", height):
-                self.__height = height
-                self.__width = width
+        self.integer_validator('width', width):
+        self.integer_validator("height", height):
+        self.__height = height
+        self.__width = width
 
     def area(self):
         """ Area """
