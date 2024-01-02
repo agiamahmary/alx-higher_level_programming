@@ -71,5 +71,7 @@ Checks print_sorted return new list
     >>> new_list.append(5)
     >>> new_list.append(9)
     >>> new_list.append(4)
-    >>> new_list != new_list.print_sorted()
-    True
+    >>> new_list.print_sorted()
+    [4, 5, 9]
+    >>> print(new_list)
+    [5, 9, 4]
