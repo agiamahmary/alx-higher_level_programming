@@ -54,6 +54,7 @@ Checks print_soted with empty list
 
     >>> new_list = MyList()
     >>> MyList.print_sorted(new_list)
+    []
 
 
 Checks print_sorted return new list
