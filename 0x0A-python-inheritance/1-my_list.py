@@ -2,7 +2,7 @@
 """ Contains class Mylist """
 
 
-class Mylist(list):
+class MyList(list):
     ''' Child of list base class '''
     
     def print_sorted(self):
