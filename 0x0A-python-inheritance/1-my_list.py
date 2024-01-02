@@ -9,5 +9,4 @@ class MyList(list):
         """ Print mylist in ascending order """
         
         sorted_list = sorted(self)
-        if sorted_list:
-            print(sorted_list)
+        print(sorted_list)
