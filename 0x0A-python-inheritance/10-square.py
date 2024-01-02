@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""COntains a Square class """
 Rectangle = __import__('9-rectangle').Rectangle
+"""Contains a Square class """
 
 
 class Square(Rectangle):
