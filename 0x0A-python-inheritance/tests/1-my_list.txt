@@ -47,7 +47,7 @@ Checks print_sorted with sorted append
 
     >>> my_list.print_sorted()
     [1, 2, 3, 4, 5, 8]
-	
+
 
 Checks print_soted with empty list
 ++++++++++++++++++++++++++++++++++
@@ -57,6 +57,14 @@ Checks print_soted with empty list
     []
 
 
+Checks print_soted with empty list
+++++++++++++++++++++++++++++++++++
+
+    >>> new_list.append(-5)
+    >>> print(new_list)
+    [-5]
+
+
 Checks print_sorted return new list
 +++++++++++++++++++++++++++++++++++
 
@@ -64,5 +72,4 @@ Checks print_sorted return new list
     >>> new_list.append(9)
     >>> new_list.append(4)
     >>> new_list != new_list.print_sorted()
-    [4, 5, 9]
     True
