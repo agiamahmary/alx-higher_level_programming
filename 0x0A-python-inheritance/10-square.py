@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-Rectangle = __import__('9-rectangle').Rectangle
-"""Contains a Square class """
+""" Contains a Square class """
+Rectangle = __import__('8-rectangle').Rectangle
 
 
 class Square(Rectangle):
