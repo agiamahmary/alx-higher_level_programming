@@ -6,12 +6,12 @@ const args = process.argv;
 if (args.length <= 3) {
   console.log("Not enough numbers provided.");
 } else {
-  let max = Number(args[2]);
-  let second = Number(args[2]);
+  let max = Math.floor(Number(args[2]));
+  let second = Math.floor(Number(args[2]));
 
   for (let i = 3; i < args.length; i++) {
-    const num = Number(args[i]);
-    
+    const num = Math.floor(Number(args[i]));
+
     if (num > max) {
       second = max;
       max = num;
