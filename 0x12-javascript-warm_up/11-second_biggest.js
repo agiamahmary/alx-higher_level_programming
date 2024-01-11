@@ -8,7 +8,7 @@ if (args.length === 2 || args.length === 3) {
 } else {
   let num1;
   let max = Math.floor(Number(args[2]));
-  let second;
+  let second = Math.floor(Number(args[2]));
   for (const x in args.splice(2)) {
     num1 = Math.floor(Number(x));
     if (num1 > max) max = num1;
