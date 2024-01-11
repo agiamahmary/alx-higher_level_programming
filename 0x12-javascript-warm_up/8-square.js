@@ -9,7 +9,7 @@ if (args.length === 2 || isNaN(Number(args[2]))) {
   const num = Math.floor(Number(args[2]));
   for (let i = 0; i < num; i++) {
     for (let i = 0; i < num; i++) {
-      process.stdout.write('x');
+      process.stdout.write('X');
     }
     console.log('');
   }
