@@ -3,7 +3,7 @@
 
 const args = process.argv;
 
-if (args.length <= 2) console.log('No argument');
-for (const arg of args) {
+if (isNaN(args[2])) console.log('No argument');
+for (const arg of args.splice(2)) {
   console.log(`${arg}`);
 }
