@@ -12,4 +12,5 @@ if (args.length === 2 || args.length === 3) {
     num1 = Math.floor(Number(x));
     if (num1 > max) max = num1;
   }
+  console.log(max);
 }
