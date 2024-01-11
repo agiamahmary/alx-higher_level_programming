@@ -4,7 +4,7 @@
 const args = process.argv;
 
 if (args.length <= 3) {
-  console.log("Not enough numbers provided.");
+  console.log(0);
 } else {
   let max = Math.floor(Number(args[2]));
   let second = Math.floor(Number(args[2]));
