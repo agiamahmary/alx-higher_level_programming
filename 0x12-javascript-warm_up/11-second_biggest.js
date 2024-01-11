@@ -7,7 +7,7 @@ if (args.length <= 3) {
   console.log(0);
 } else {
   let max = Math.floor(Number(args[2]));
-  let second = Math.floor(Number(args[2]));
+  let second = 0;
 
   for (let i = 3; i < args.length; i++) {
     const num = Math.floor(Number(args[i]));
