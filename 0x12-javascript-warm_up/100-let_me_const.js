@@ -1,2 +1,2 @@
 #!/usr/bin/node
-module.exports = 333;
+myVar = 333;
