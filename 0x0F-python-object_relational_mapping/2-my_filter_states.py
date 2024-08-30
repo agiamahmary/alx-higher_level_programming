@@ -18,7 +18,7 @@ if __name__ == '__main__':
     cur = db.cursor()
     sql_state = """SELECT id, name
                 FROM states
-                WHERE name='{}'
+                WHERE BINARY name='{}'
                 ORDER BY id""".format(args[4])
 
     cur.execute(sql_state)
