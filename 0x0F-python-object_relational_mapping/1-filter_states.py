@@ -16,11 +16,12 @@ if __name__ == '__main__':
             port=3306
         )
     cur = db.cursor()
-    cur.execute("
+    cur.execute("""
                 SELECT id, name
                 FROM states
                 WHERE BINARY name LIKE 'N%'
-                ORDER BY id")
+                ORDER BY id
+            """)
 
     res = cur.fetchall()
 
