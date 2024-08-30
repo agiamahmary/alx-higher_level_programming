@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""A script that lists all states with a name starting with
+"""A script that takes in an argument and displays all values in the states
 
-    N (upper N) from the database hbtn_0e_0_usa
+    table of hbtn_0e_0_usa where name matches the argument
 """
 if __name__ == '__main__':
     import MySQLdb
@@ -16,13 +16,12 @@ if __name__ == '__main__':
             port=3306
         )
     cur = db.cursor()
-    sql_state = """
-                SELECT id, name
+    sql_state = """SELECT id, name
                 FROM states
-                WHERE name LIKE %s
-                ORDER BY id
-                """
-    cur.execute(sql_state, (args[4],))
+                WHERE name='{}'
+                ORDER BY id""".format(args[4])
+
+    cur.execute(sql_state)
 
     res = cur.fetchall()
 
