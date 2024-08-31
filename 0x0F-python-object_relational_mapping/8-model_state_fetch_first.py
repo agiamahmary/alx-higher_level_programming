@@ -25,6 +25,6 @@ if __name__ == "__main__":
     if res:
         print("{}: {}".format(res.id, res.name))
     else:
-        print()
+        print("Nothing")
 
     session.close()
