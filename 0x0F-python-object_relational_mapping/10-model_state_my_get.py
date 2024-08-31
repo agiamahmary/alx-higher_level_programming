@@ -20,11 +20,11 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    res = session.query(State).filter(State.name == arg[4]).first()
+    res = session.query(State).filter(State.name == arg[4]).one_or_none()
 
     if res:
         print(res.id)
     else:
-        print("Not Found")
+        print("Not found")
 
     session.close()
