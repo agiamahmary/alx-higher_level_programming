@@ -1,3 +1,10 @@
 #!/bin/bash
 # Write a Bash script that displays the body of the response
-curl -w "%{http_code}" -s -o /dev/null $1
+res=$(curl -sL -w " %{http_code}"  "$1")
+
+if [ "${res: -3}" = "200" ];
+then
+    echo "${res:: -3}"
+else
+    exit
+fi
