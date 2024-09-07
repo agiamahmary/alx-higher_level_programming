@@ -7,7 +7,9 @@ variable X-Request-Id in the response header
 
 if __name__ == "__main__":
     import requests
+    import sys
 
-    r = requests.get('https://alx-intranet.hbtn.io/status')
+    url = sys.argv[1]
+    r = requests.get(url)
 
     print(r.headers.get('X-Request-Id'))
