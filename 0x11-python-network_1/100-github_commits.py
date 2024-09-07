@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
-Write a Python script that takes 2 arguments in
+Write a Python script that takes 2 arguments in 
 order to solve this challenge
 
 CHALLENGE: Please list 10 commits (from the most recent to oldest)
-of the repository rails by the user rails
+of the repository “rails” by the user “rails
 """
 
 if __name__ == "__main__":
@@ -19,7 +19,11 @@ if __name__ == "__main__":
     r = requests.get(url)
     commits = r.json()
 
-    for commit in commits[:10]:
-        sha = commit.get('sha')
-        author_name = commit.get('commit').get('author').get('name')
-        print(f"{sha}: {author_name}")
+    try:
+        for idx in range(10):
+            sha = commits[idx].get('sha')
+            commit = commits[idx].get('commit')
+            author_name = commit.get('author').get('name')
+            print(f"{sha}: {author_name}")
+    except IndexError:
+        pass
