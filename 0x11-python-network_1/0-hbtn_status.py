@@ -16,6 +16,6 @@ if __name__ == "__main__":
         utf_v = byte_v.decode('utf-8')
 
         print("""Body response:
-        - type: {}
-        - content: {}
-        - utf8 content: {}""".format(typ, byte_v, utf_v))
+\t- type: {}
+\t- content: {}
+\t- utf8 content: {}""".format(typ, byte_v, utf_v))
