@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Write a Python script that takes 2 arguments in 
+Write a Python script that takes 2 arguments in
 order to solve this challenge
 
 CHALLENGE: Please list 10 commits (from the most recent to oldest)
