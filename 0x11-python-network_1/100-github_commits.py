@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 """
-Write a Python script that takes 2 arguments in 
+Write a Python script that takes 2 arguments in
 order to solve this challenge
 
 CHALLENGE: Please list 10 commits (from the most recent to oldest)
-of the repository “rails” by the user “rails
+of the repository rail by the userrails
 """
 
 if __name__ == "__main__":
     import requests
     import sys
 
-    owner = sys.argv[1]
-    repo = sys.argv[2]
+    owner = sys.argv[2]
+    repo = sys.argv[1]
 
     url = f"https://api.github.com/repos/{owner}/{repo}/commits"
 
